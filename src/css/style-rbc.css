@@ -1,0 +1,48 @@
+/**/
+.lft-n-pad{
+  width: 17%;
+  max-width: 200px;
+  float: left;
+  margin-right: 62px;
+  height: 15px;
+}
+.navigation {
+  background:#fff;
+}
+.navigation-menu {
+  margin:0;
+  padding:14px 10px 13px 10px;
+  list-style:none;
+  font-size:14px;
+  font-weight:bold;
+  text-align:center;
+  line-height:20px;
+}
+
+@media only screen and (max-width:1024px) {
+  .navigation-menu {
+    padding:4px 10px 3px 10px;
+  }
+}
+
+.navigation-menu li {
+  margin:0 10px;
+  padding:0;
+  display:inline;
+  vertical-align:middle;
+}
+.navigation-menu .rbc-logo img {
+  vertical-align:top;
+}
+.navigation-menu .rbc-logo a {
+  border:0;
+}
+.navigation-menu a {
+  color:#000;
+  text-decoration:none;
+  border-bottom:1px solid #c4c4c4;
+}
+.navigation-menu a:hover {
+  text-decoration:none;
+}
+/*/*/

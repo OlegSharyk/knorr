@@ -1,0 +1,176 @@
+/* custom file input */
+.file-area .jcf-input-wrapper {
+  position: relative;
+  overflow: hidden;
+  float: left;
+}
+.file-area .jcf-upload-button {
+  font-size:20px;
+  line-height:20px;
+  font-family:@secondFontFamily;
+  text-transform:uppercase;
+  border:1px solid @white;
+  color:@white;
+  .border-radius(1px);
+  padding: 6px 5px 1px;
+  width: 72px;
+  height:23px;
+  float:left;
+  text-align:center;
+
+  &:hover {
+    color:#ffea8b;
+    border-color:#ffea8b;
+  }
+}
+.file-area .jcf-fake-input {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: bold;
+  color: #90774e;
+  border: 1px solid #897048;
+  padding: 4px 10px;
+  float: left;
+  margin: 0 23px 0 0;
+  width: 190px;
+  height: 20px;
+  background:@white;
+  overflow:hidden;
+}
+.file-area .jcf-fake-input em {
+  font-style:normal;
+  white-space:nowrap;
+}
+.file-disabled .jcf-upload-button {
+  border-color: #eee;
+  background-color: #eee;
+  color: #777;
+}
+.file-disabled .jcf-fake-input {
+  border-color: #eee;
+  color: #aaa;
+}
+/* custom scrollbars styles */
+.scrollable-area-wrapper {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+.scrollable-area-wrapper .hscrollbar,
+.scrollable-area-wrapper .vscrollbar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 20px;
+}
+.scrollable-area-wrapper .hscroll-left,
+.scrollable-area-wrapper .vscroll-up,
+.scrollable-area-wrapper .hscroll-right,
+.scrollable-area-wrapper .vscroll-down {
+  background: #777;
+  width: 20px;
+  height: 20px;
+  float: left;
+}
+.scrollable-area-wrapper .hscroll-line,
+.scrollable-area-wrapper .vscroll-line {
+  background: #eee;
+  width: 20px;
+  float: left;
+}
+.scrollable-area-wrapper .hscroll-slider,
+.scrollable-area-wrapper .vscroll-slider {
+  background: #ccc;
+  width: 20px;
+  height: 20px;
+}
+.scrollable-area-wrapper .hscrollbar {
+  position: static;
+  height: 20px;
+  top: auto;
+}
+.scrollable-area-wrapper .hscroll-line {
+  height: 20px;
+  width: auto;
+}
+/* misc styles */
+.controls-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.controls-list li {
+  margin: 0 0 10px;
+  overflow: hidden;
+  width: 100%;
+}
+.controls-list label {
+  margin: 0 10px 0 0;
+  float: left;
+}
+.controls-list label.demo-label span {
+  font: bold 11px "Courier New", Courier, monospace;
+  color: #007;
+}
+.controls-list select {
+  width: 150px;
+}
+.live-example fieldset {
+  font-size: 14px;
+  line-height: 20px;
+  border: 1px solid #ddd;
+  display: block;
+  padding: 15px;
+  margin: 0 0 15px;
+}
+.live-example fieldset legend {
+  font-style: italic;
+  color: #000;
+}
+.live-example fieldset .scrollable-area-wrapper {
+  margin: 0 0 20px;
+}
+.scrollable-area {
+  background: #ffe;
+  overflow: auto;
+  height: 200px;
+  width: 400px;
+}
+.anyscrollable .text,
+.hscrollable .text {
+  width: 600px;
+}
+.file-list .row {
+  overflow: hidden;
+  margin: 0 0 10px;
+  width: 100%;
+}
+.file-list .flip .jcf-fake-input {
+  float: right;
+}
+.test-select {
+  width: 123px;
+}
+.select-options li.default {
+  display: none;
+}
+ul.thumbnails {
+  list-style: none;
+  font-size: 50px;
+  line-height: 150px;
+  text-align: center;
+  float: left;
+  padding: 0;
+  margin: 0;
+}
+ul.thumbnails li {
+  background: #eee;
+  display: inline;
+  float: left;
+  margin: 15px;
+  width: 150px;
+  height: 150px;
+}
+.btn-disabled {
+  background: #aaa !important;
+}

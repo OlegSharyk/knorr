@@ -1,0 +1,78 @@
+/*---------------------------------------------------------------------------
+	[Buttons]
+---------------------------------------------------------------------------*/
+.btn {
+	position:relative;
+	display:inline-block;
+	vertical-align:top;
+  .transition(all .3s ease);
+
+	&_white {
+    font-size:20px;
+    line-height:30px;
+    font-family:@secondFontFamily;
+    text-transform:uppercase;
+    border:1px solid @white;
+    color:@white;
+    .border-radius(1px);
+    /*padding:5px 58px;*/
+    padding: 5px 5px;
+    width: 159px;
+
+    &:hover {
+      color:#ffea8b;
+      border-color:#ffea8b;
+    }
+  }
+  &_green {
+    font-size:14px;
+    line-height:30px;
+    font-family: "Open Sans",Arial,sans-serif;
+    text-transform:uppercase;
+    color:@white;
+    .border-radius(1px);
+    padding: 5px 5px;
+    width: 172px;
+    background: #007b3f;
+    text-align: center;
+    
+    &:hover {
+      color:@white;
+      background: #036435;
+    }
+  }
+
+  &_fb {
+    width:112px;
+    height:32px;
+    overflow:hidden;
+    text-indent:-9999px;
+    .ico_btn-fb();
+  }
+  &_tw{
+    width:112px;
+    height:32px;
+    overflow:hidden;
+    text-indent:-9999px;
+    .ico_btn-tw();
+  }
+  &_vk {
+    width:112px;
+    height:32px;
+    overflow:hidden;
+    text-indent:-9999px;
+    .ico_btn-vk();
+  }
+  &_ok {
+    width:112px;
+    height:32px;
+    overflow:hidden;
+    text-indent:-9999px;
+    .ico_btn-ok();
+  }
+}
+
+.btn__holder {
+  padding:0 0 10px;
+}
+

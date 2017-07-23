@@ -1,0 +1,226 @@
+.b-popup {
+  position:fixed;
+  z-index:1000;
+  left:0;
+  top:0;
+  width:100%;
+  height:100%;
+
+  &_dish {
+
+    &__arr-prev {
+      position: absolute;
+      left: -5px;
+      top: 50%;
+      margin-top: -40px;
+      .ico_arrow-prev();
+    }
+
+    &__arr-next {
+      position: absolute;
+      right: -5px;
+      top: 50%;
+      margin-top: -40px;
+      .ico_arrow-next();
+    }
+
+    .b-popup__close {
+      right: 12px;
+      top: 12px;
+    }
+
+    &__list {
+      width: 375px;
+      margin: 0 auto;
+    }
+
+    &__item {
+      position: relative;
+      width: 375px;
+      height: 250px;
+
+      .btn_white {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin: -20px 0 0 -85px;
+        text-align: center;
+        width: 170px;
+        z-index: 5;
+      }
+    }
+
+    .b-popup__cnt {
+      margin: 10px 0 0;
+      position: relative;
+    }
+
+    .b-popup__head {
+      width: 375px;
+      margin: 0 auto;
+      position: relative;
+      padding: 0;
+    }
+
+    .b-popup__data {
+      height: 474px !important;
+      width: 505px;
+      padding: 36px 25px 47px;
+      margin: -260px 0 0 -253px !important;
+    }
+
+    .b-popup__head-ttl {
+      float: left;
+      font-size: 20px;
+      text-transform: uppercase;
+      font-family: "flavour_cyrillicregular";
+      color: @white;
+      width: 144px;
+      text-align: left;
+      line-height: 22px;
+    }
+
+    .b-popup__head-info {
+      text-align: right;
+      font-family: "Open Sans", Arial, sans-serif;
+      font-size: 10px;
+      color: @white;
+      line-height: 12px;
+      position: absolute;
+      bottom: 3px;
+      right: 0;
+      text-transform: uppercase;
+
+      span {
+        font-weight: 800;
+      }
+    }
+    .b-popup__user-works {
+      background: url("../img/icons/user-works-line.png") repeat-x left top;
+      padding: 27px 22px 0;
+      margin: 19px 43px 0 43px;
+    }
+    .b-popup__user-works-img {
+      float: left;
+      width: 129px;
+      height: 129px;
+      margin: 0 20px 0 0;
+
+      img {
+        display: block;
+      }
+    }
+
+    .b-popup__user-link {
+      font-family: "Open Sans", Arial, sans-serif;
+      font-weight: 600;
+      font-size: 12px;
+      color: @white;
+      text-transform: uppercase;
+      text-decoration: underline;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+    }
+
+    .b-popup__user-works-data {
+      float: left;
+      height: 129px;
+      position: relative;
+    }
+    .b-popup__user-name {
+      font-size: 20px;
+      text-transform: uppercase;
+      font-family: "flavour_cyrillicregular";
+      color: @white;
+      line-height: 22px;
+      overflow: hidden;
+      height: 70px;
+      margin: 33px 0 0;
+    }
+
+    .profile__work-img {
+      margin:0;
+    }
+    .profile__work-desc {
+      margin:0 0 10px;
+    }
+
+    .bx-wrapper .bx-controls-direction a.bx-prev {
+      left:-70px;
+      top:50%;
+      width:50px;
+      height:49px;
+      margin:-10px 0 0;
+      .ico_arrow-prev();
+      z-index:10;
+    }
+    .bx-wrapper .bx-controls-direction a.bx-next {
+      right:-70px;
+      top:50%;
+      width:50px;
+      height:49px;
+      margin:-10px 0 0;
+      .ico_arrow-next();
+      z-index:10;
+    }
+  }
+
+  &__bg {
+    position:absolute;
+    z-index:1;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    background:url(../img/overlay-black.png);
+  }
+
+  &__data {
+    position:absolute;
+    z-index:100;
+    left:50%;
+    top:50%;
+    height:230px;
+    width:690px;
+    margin:-145px 0 0 -370px;
+    padding:30px 25px;
+    background:url(../img/bg-popup.png);
+  }
+
+  &__close {
+    position:absolute;
+    right:14px;
+    top:10px;
+    width:30px;
+    height:30px;
+    overflow:hidden;
+    text-indent:-9999px;
+    .ico_close();
+  }
+
+  &__head {
+    text-align:center;
+    padding:0 0 20px;
+
+    h4 {
+      font-size:20px;
+      line-height:24px;
+      color:@white;
+      text-transform:uppercase;
+      font-weight:normal;
+      font-family:@secondFontFamily;
+    }
+  }
+
+  &_rules {
+
+    .b-popup__data {
+      height:540px;
+      width:1130px;
+      margin:-310px 0 0 -590px;
+      padding:40px 25px;
+    }
+  }
+}
+
